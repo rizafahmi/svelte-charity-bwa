@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Edukasi untuk semua anak.",
+      "img": "img/child.jpg",
+      "description": "Kita ingin membantu untuk memberikan edukasi gratis kepada seluruh anak Indonesia.",
+      "raised": 0,
+      "goal": 200000000
+    }
+  ]
+}
