@@ -1,12 +1,74 @@
-{
-  "projects": [
-    {
-      "id": 1,
-      "title": "Edukasi untuk semua anak.",
-      "img": "img/child.jpg",
-      "description": "Kita ingin membantu untuk memberikan edukasi gratis kepada seluruh anak Indonesia.",
-      "raised": 0,
-      "goal": 200000000
-    }
-  ]
-}
+[
+  {
+    "id": 0,
+    "title": "suscipit omnis accusamus hic et",
+    "description": "Ea et eum eligendi consequuntur illum nihil vel tempore. Quo similique blanditiis deleniti enim est est aperiam. Fugiat enim fugit aliquam aperiam consectetur. Maxime et dolores eveniet optio illo ipsa facere praesentium. Autem cum aut cum. Dignissimos eligendi dignissimos qui neque magnam exercitationem.\n \rQuis distinctio quia soluta sed. Explicabo odit reiciendis aspernatur ipsa. Voluptas maxime inventore autem autem. Aliquam soluta inventore provident repellendus.\n \rReiciendis et cum consequatur ut corrupti. Dolorem libero cumque vitae. Sint et odio facere magnam. Natus minima laborum. Sed velit cumque enim consequuntur fugiat.",
+    "img": "img/autem.jpg",
+    "raised": "891.29",
+    "goal": "731.74"
+  },
+  {
+    "id": 1,
+    "title": "velit vitae pariatur vitae adipisci",
+    "description": "Ut est voluptas neque soluta exercitationem iusto. Eveniet atque sequi eos possimus blanditiis et expedita consectetur. Unde quia assumenda labore repellendus non eos. Quidem velit hic accusamus omnis aut.\n \rVoluptas magni debitis maxime omnis et repellendus assumenda aliquam. Eligendi voluptatibus ducimus tempore quis in voluptate ea expedita. Voluptatibus molestias dolorem. Iusto nesciunt aut excepturi iure vel id. Ex impedit sed animi sit ad. Sapiente inventore eum laborum dolorem.\n \rQui aut dignissimos sequi rerum tenetur sapiente quod. Nisi illo quidem est sint. Et dolorem debitis ut corrupti. Eos quasi ipsum dolor et voluptatem.",
+    "img": "img/voluptates.jpg",
+    "raised": "890.16",
+    "goal": "433.32"
+  },
+  {
+    "id": 2,
+    "title": "et sint iure placeat et",
+    "description": "Excepturi deleniti ab molestias a nesciunt corrupti quo. Ut eum minima. Et laborum minus accusantium. Asperiores quisquam velit. Qui et sit amet repellat eum.\n \rRecusandae corrupti aut quia dolores iste. Ipsa soluta debitis odit quae non sapiente qui. Sint aut et magni et illum fugiat voluptas unde.\n \rEst sit cumque. Vitae sed fugit pariatur cumque eius amet debitis. Nemo vel quis aperiam earum rerum in. Quam natus dolores nobis veniam quas. Numquam sequi a exercitationem quas voluptates nemo.",
+    "img": "img/laboriosam.jpg",
+    "raised": "719.34",
+    "goal": "986.84"
+  },
+  {
+    "id": 3,
+    "title": "hic excepturi ut nesciunt possimus",
+    "description": "Atque nisi sint nemo excepturi qui provident nesciunt. Fugiat eos aut corporis esse natus nostrum excepturi ipsam nesciunt. Ut possimus officia iusto. Impedit quibusdam natus tempora labore veniam non illo dignissimos. Laboriosam quis voluptatem ex incidunt est sint quis et.\n \rAsperiores aut impedit. Consequatur mollitia dignissimos optio ullam quibusdam a quis. Sapiente quod minima ad vitae ab sit. Aut qui iste illo. Est qui omnis sed sit blanditiis laboriosam non reiciendis reiciendis.\n \rExpedita sed laborum accusamus voluptatem nobis sit fugit. Enim aut optio quidem. Repellat quia perferendis et debitis provident et culpa.",
+    "img": "img/libero.jpg",
+    "raised": "980.68",
+    "goal": "564.97"
+  },
+  {
+    "id": 4,
+    "title": "qui dicta expedita dolorem doloremque",
+    "description": "Numquam dignissimos sit ducimus a cupiditate perspiciatis saepe. Perferendis ut nesciunt nostrum iusto repudiandae. Quia alias recusandae blanditiis nihil sapiente voluptate.\n \rVoluptas sed in voluptatibus qui quas dolorem. Sit facilis aliquam omnis magni culpa et. Dignissimos voluptate quo sunt necessitatibus temporibus.\n \rEveniet nostrum laboriosam vero officiis qui ut distinctio et distinctio. Consequuntur exercitationem quia earum expedita facilis sed et accusamus. Dolorum eum atque omnis ad voluptas et sunt. Est placeat reiciendis quis nobis itaque quam voluptatem. Libero repellendus quia nulla eum magnam ex perferendis reprehenderit.",
+    "img": "img/rem.jpg",
+    "raised": "437.77",
+    "goal": "124.07"
+  },
+  {
+    "id": 5,
+    "title": "accusamus alias non vel non",
+    "description": "Qui eum cumque dolor voluptatum voluptatem porro dolorum velit. Aliquam dolores earum. Et eos odio quis saepe aperiam et qui. Quae nobis aspernatur. Architecto quia doloribus.\n \rItaque assumenda nihil. Consequatur corrupti dolorem doloribus et hic esse soluta iste deleniti. Consequatur recusandae deserunt distinctio at.\n \rIn et quam perspiciatis ratione cum sed ea. Quia quia libero ad non. Ea ab voluptas aliquid nesciunt repellendus. Eaque quisquam ad dolorem.",
+    "img": "img/sed.jpg",
+    "raised": "950.34",
+    "goal": "665.83"
+  },
+  {
+    "id": 6,
+    "title": "hic laboriosam qui dolorem quo",
+    "description": "Porro sunt provident quia deleniti repellat. Eos sit quas commodi libero minima deserunt cumque ut. Saepe distinctio voluptate aut ut.\n \rAnimi beatae consequatur odio numquam cumque nulla. Quia rerum minima eum ducimus. Sunt eaque vitae et. Consequatur aperiam iste qui a reprehenderit ipsam enim totam.\n \rUt dolore animi iusto. Doloremque et vel quisquam explicabo eum sed ut. Consequatur voluptates atque neque nostrum laudantium iusto.",
+    "img": "img/qui.jpg",
+    "raised": "464.50",
+    "goal": "945.70"
+  },
+  {
+    "id": 7,
+    "title": "ullam recusandae sed blanditiis eos",
+    "description": "Quos quo qui doloremque porro illum qui. Nihil odio omnis et. Vel officia aut dolorem nostrum corrupti esse quia. Voluptatum ipsa modi. Nobis odio provident possimus est et tempore sit.\n \rSoluta aut quia voluptatem qui eligendi. At sunt accusantium deleniti velit ullam non deleniti repudiandae pariatur. Quo velit necessitatibus ipsum ratione reprehenderit nam porro rerum. Quam qui esse commodi quia illo nostrum. Adipisci consequatur in quisquam doloremque provident earum. Rerum sint vel sit et qui.\n \rDoloremque omnis eius earum exercitationem quis hic temporibus soluta. Totam est dolorem corporis est ea ut. Corrupti ut exercitationem beatae quia magni. Ut enim sunt qui eum fugiat repellat enim autem enim.",
+    "img": "img/consequatur.jpg",
+    "raised": "947.70",
+    "goal": "791.49"
+  },
+  {
+    "id": 8,
+    "title": "id quae aut delectus iusto",
+    "description": "Nemo qui dolor voluptatem recusandae quia et est similique dolorem. Hic ut alias perspiciatis dolor exercitationem nostrum animi. Impedit saepe laboriosam voluptate quis sint sed ducimus. Sunt deserunt perspiciatis aut maiores. Eius officiis nesciunt est. Officia repellat ab mollitia eum voluptates.\n \rRecusandae ut inventore. Molestiae aut quia ipsum provident odit. Pariatur consequatur et ut est. Omnis magnam assumenda sint maxime impedit. Labore aut eius. Autem impedit veritatis praesentium iste eos quia ea id.\n \rFugiat sed libero autem ad nisi quod explicabo. Velit dolores velit ut hic quia. Et iste illum magni repudiandae nulla architecto voluptatem. Incidunt et aut dolor. Aut eum nobis dignissimos voluptate exercitationem ad.",
+    "img": "img/rerum.jpg",
+    "raised": "721.05",
+    "goal": "500.68"
+  }
+]

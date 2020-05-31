@@ -1,4 +1,5 @@
 dependencies:
+  faker: 4.1.0
   sirv-cli: 0.4.6
   svelte-spa-router: 2.2.0_svelte@3.23.0
 devDependencies:
@@ -238,6 +239,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==
+  /faker/4.1.0:
+    dev: false
+    resolution:
+      integrity: sha1-HkW7vsxndLPBlfrSg1EJxtdIzD8=
   /fill-range/7.0.1:
     dependencies:
       to-regex-range: 5.0.1
@@ -634,6 +639,7 @@ specifiers:
   '@rollup/plugin-commonjs': ^12.0.0
   '@rollup/plugin-json': 4.0.3
   '@rollup/plugin-node-resolve': ^8.0.0
+  faker: 4.1.0
   rollup: ^2.3.4
   rollup-plugin-livereload: ^1.0.0
   rollup-plugin-svelte: ^5.0.3

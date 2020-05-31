@@ -1,6 +1,5 @@
 <script>
-  import { projects } from './data.json';
-
+  import projects from './data.json';
   import Template from './Template.svelte';
 </script>
 
