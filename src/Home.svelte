@@ -1,5 +1,7 @@
 <script>
   import { projects } from './data.json';
+
+  import Template from './Template.svelte';
 </script>
 
 <style>
@@ -33,9 +35,7 @@
   }
 </style>
 
-<main>
-  <h1>Charity</h1>
-
+<Template>
   <div class="project-list">
     {#each projects as project}
       <div class="project">
@@ -50,4 +50,4 @@
       </div>
     {/each}
   </div>
-</main>
+</Template>
