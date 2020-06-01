@@ -1,21 +1,14 @@
 <script>
-  import { onMount } from 'svelte';
-  import Navigation from './components/Navigation.svelte';
-  import CharityList from './components/CharityList.svelte';
-  import Layout from './components/Layout.svelte';
+  import Router from 'svelte-spa-router';
+  import Home from './Home.svelte';
+  import About from './About.svelte';
+  import Detail from './Detail.svelte';
 
-  let charities = [];
-
-  onMount(async function() {
-    const res = await fetch(`https://charity-api-bwa.herokuapp.com/charities`);
-    charities = await res.json();
-  });
+  const routes = {
+    '/': Home,
+    '/about': About,
+    '/detail/:cid': Detail
+  };
 </script>
 
-<style>
-
-</style>
-
-<Layout>
-  <CharityList {charities} />
-</Layout>
+<Router {routes} />
