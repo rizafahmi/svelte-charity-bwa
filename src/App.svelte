@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import Navigation from './components/Navigation.svelte';
   import CharityList from './components/CharityList.svelte';
+  import Layout from './components/Layout.svelte';
 
   let charities = [];
 
@@ -15,7 +16,6 @@
 
 </style>
 
-<main>
-  <Navigation />
+<Layout>
   <CharityList {charities} />
-</main>
+</Layout>
