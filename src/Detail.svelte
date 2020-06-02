@@ -8,7 +8,9 @@
   console.log(params);
 
   onMount(async function() {
-    const res = await fetch(`http://localhost:3000/charities/${params.cid}`);
+    const res = await fetch(
+      `https://charity-api-bwa.herokuapp.com/charities/${params.cid}`
+    );
 
     currentProject = await res.json();
   });
