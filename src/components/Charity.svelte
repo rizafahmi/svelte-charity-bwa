@@ -1,4 +1,5 @@
 <script>
+  import { fly } from 'svelte/transition';
   export let charity;
 </script>
 
@@ -28,7 +29,7 @@
   }
 </style>
 
-<div class="charity">
+<div class="charity" transition:fly={{ duration: 2000, y: 200 }}>
   <img src={charity.img} alt="" />
   <h2>{charity.title}</h2>
   <p>{charity.description}</p>
