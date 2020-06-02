@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { fly } from 'svelte/transition';
   import Layout from './components/Layout.svelte';
 
   export let params = {};
@@ -7,9 +8,7 @@
   console.log(params);
 
   onMount(async function() {
-    const res = await fetch(
-      `https://charity-api-bwa.herokuapp.com/charities/${params.cid}`
-    );
+    const res = await fetch(`http://localhost:3000/charities/${params.cid}`);
 
     currentProject = await res.json();
   });
@@ -24,7 +23,7 @@
 </style>
 
 <Layout>
-  <div>
+  <div transition:fly={{ duration: 1000, y: 100 }}>
     {#if currentProject}
       <h2>{currentProject.title}</h2>
       <img src={currentProject.img} alt="project placeholder" />

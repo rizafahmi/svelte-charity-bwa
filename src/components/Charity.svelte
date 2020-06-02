@@ -29,7 +29,7 @@
   }
 </style>
 
-<div class="charity" transition:fly={{ duration: 2000, y: 200 }}>
+<div class="charity" transition:fly={{ duration: 1000, y: 100 }}>
   <img src={charity.img} alt="" />
   <h2>{charity.title}</h2>
   <p>{charity.description}</p>
