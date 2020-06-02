@@ -17,5 +17,9 @@
 </style>
 
 <Layout>
-  <CharityList {charities} />
+  {#if charities.length > 0}
+    <CharityList {charities} />
+  {:else}
+    <h2>Loading...</h2>
+  {/if}
 </Layout>
