@@ -2,18 +2,12 @@
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition';
   import Layout from './components/Layout.svelte';
+  import { charitiesStore } from './store.js';
 
   export let params = {};
   let currentProject = null;
-  console.log(params);
 
-  onMount(async function() {
-    const res = await fetch(
-      `https://charity-api-bwa.herokuapp.com/charities/${params.cid}`
-    );
-
-    currentProject = await res.json();
-  });
+  charitiesStore.subscribe((value) => (currentProject = value[params.cid]));
 </script>
 
 <style>

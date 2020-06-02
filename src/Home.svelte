@@ -1,5 +1,7 @@
 <script>
   import { onMount } from 'svelte';
+
+  import { charitiesStore } from './store.js';
   import Navigation from './components/Navigation.svelte';
   import CharityList from './components/CharityList.svelte';
   import Layout from './components/Layout.svelte';
@@ -8,7 +10,9 @@
 
   onMount(async function() {
     const res = await fetch(`https://charity-api-bwa.herokuapp.com/charities`);
-    charities = await res.json();
+    const data = await res.json();
+    charitiesStore.subscribe((value) => (charities = value));
+    charitiesStore.update(() => data);
   });
 </script>
 
