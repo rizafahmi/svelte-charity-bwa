@@ -7,7 +7,8 @@
   let charities = [];
 
   onMount(async function() {
-    const res = await fetch(`https://charity-api-bwa.herokuapp.com/charities`);
+    // const res = await fetch(`https://charity-api-bwa.herokuapp.com/charities`);
+    const res = await fetch(`http://localhost:3000/charities`);
     charities = await res.json();
   });
 </script>
