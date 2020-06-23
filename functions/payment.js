@@ -1,5 +1,10 @@
 exports.handler = function(event, context, callback) {
   const Midtrans = require('midtrans-client');
+const headers = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'Content-Type',
+  'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
+};
 
   const snap = new Midtrans.Snap({
     isProduction: false,
@@ -27,6 +32,7 @@ exports.handler = function(event, context, callback) {
       console.log(`URL: ${redirectUrl}`);
       callback(null, {
         statusCode: 200,
+        headers,
         body: JSON.stringify({ url: redirectUrl })
       });
     })
@@ -34,6 +40,7 @@ exports.handler = function(event, context, callback) {
       console.error(`error: ${e.message}`);
       callback(null, {
         statusCode: 400,
+        headers,
         body: JSON.stringify({ error: e.message })
       });
     });
