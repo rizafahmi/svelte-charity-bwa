@@ -14,11 +14,12 @@ exports.handler = function(event, context, callback) {
   });
 
   console.log(event.queryStringParameters);
+  const params = querystring.parse(event.body);
 
   const parameter = {
     transaction_details: {
-      order_id: '124',
-      gross_amount: 20000
+      order_id: params.pid,
+      gross_amount: params.nominal
     },
     credit_card: {
       secure: true
@@ -34,13 +35,12 @@ exports.handler = function(event, context, callback) {
       const redirectUrl = transaction.redirect_url;
       console.log(`URL: ${redirectUrl}`);
 
-      const params = querystring.parse(event.body);
       callback(null, {
         statusCode: 200,
         headers,
         body: JSON.stringify({
           url: redirectUrl,
-          params
+          params: parameter
         })
       });
     })
