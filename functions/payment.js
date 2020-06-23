@@ -28,7 +28,8 @@ exports.handler = function(event, context, callback) {
     statusCode: 200,
     headers,
     body: JSON.stringify({
-      params: parameter
+      params,
+      parameter
     })
   });
 
