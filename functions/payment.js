@@ -19,7 +19,7 @@ exports.handler = function(event, context, callback) {
   const parameter = {
     transaction_details: {
       order_id: params.pid,
-      gross_amount: params.nominal
+      gross_amount: parseInt(params.nominal)
     },
     credit_card: {
       secure: true
