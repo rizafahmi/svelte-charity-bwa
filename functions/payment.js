@@ -1,6 +1,5 @@
 exports.handler = function(event, context, callback) {
   const Midtrans = require('midtrans-client');
-  const querystring = require('querystring');
   const headers = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Content-Type',
@@ -13,7 +12,7 @@ exports.handler = function(event, context, callback) {
     clientKey: process.env.MIDTRANS_CLIENT_KEY
   });
 
-  const params = querystring.parse(event.body);
+  const params = JSON.parse(event.body);
 
   const parameter = {
     transaction_details: {
@@ -24,14 +23,6 @@ exports.handler = function(event, context, callback) {
       secure: true
     }
   };
-  callback(null, {
-    statusCode: 200,
-    headers,
-    body: JSON.stringify({
-      params,
-      parameter
-    })
-  });
 
   snap
     .createTransaction(parameter)
