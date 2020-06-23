@@ -27,14 +27,14 @@ exports.handler = function(event, context, callback) {
       console.log(`URL: ${redirectUrl}`);
       callback(null, {
         statusCode: 200,
-        body: { url: redirectUrl }
+        body: JSON.stringify({ url: redirectUrl })
       });
     })
     .catch((e) => {
       console.error(`error: ${e.message}`);
       callback(null, {
         statusCode: 400,
-        body: {error: e.message }
+        body: JSON.stringify({ error: e.message })
       });
     });
 };
