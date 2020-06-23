@@ -38,4 +38,5 @@
     <li>Jumlah yang ingin dicapai: {charity.goal}</li>
   </ul>
   <a class="button" href={`#/detail/${charity.id}`}>Lihat</a>
+  <a class="button" href={`#/donate/${charity.id}`}>Donasi</a>
 </div>
