@@ -1,5 +1,6 @@
 exports.handler = function(event, context, callback) {
   const Midtrans = require('midtrans-client');
+  console.log(process.env.MIDTRANS_SERVER_KEY, process.env.MIDTRANS_CLIENT_KEY);
 
   const snap = new Midtrans.Snap({
     isProduction: false,
