@@ -13,7 +13,6 @@ exports.handler = function(event, context, callback) {
     clientKey: process.env.MIDTRANS_CLIENT_KEY
   });
 
-  console.log(event.queryStringParameters);
   const params = querystring.parse(event.body);
 
   const parameter = {
@@ -25,6 +24,14 @@ exports.handler = function(event, context, callback) {
       secure: true
     }
   };
+  callback(null, {
+    statusCode: 200,
+    headers,
+    body: JSON.stringify({
+      url: redirectUrl,
+      params: parameter
+    })
+  });
 
   snap
     .createTransaction(parameter)
