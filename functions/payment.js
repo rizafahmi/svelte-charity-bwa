@@ -1,6 +1,5 @@
 exports.handler = function(event, context, callback) {
   const Midtrans = require('midtrans-client');
-  console.log(process.env.MIDTRANS_SERVER_KEY, process.env.MIDTRANS_CLIENT_KEY);
 
   const snap = new Midtrans.Snap({
     isProduction: false,
@@ -26,11 +25,16 @@ exports.handler = function(event, context, callback) {
 
       const redirectUrl = transaction.redirect_url;
       console.log(`URL: ${redirectUrl}`);
+      callback(null, {
+        statusCode: 200,
+        body: redirectUrl
+      });
     })
-    .catch((e) => console.error(`error: ${e.message}`));
-
-  callback(null, {
-    statusCode: 200,
-    body: redirectUrl
-  });
+    .catch((e) => {
+      console.error(`error: ${e.message}`);
+      callback(null, {
+        statusCode: 400,
+        body: e.message
+      });
+    });
 };
