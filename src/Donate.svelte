@@ -6,6 +6,11 @@
   let currentProject = null;
 
   charitiesStore.subscribe((value) => (currentProject = value[params.cid]));
+  (function () {
+    const res = fetch(`.netlify/functions/payment`)
+    const redirectUrl = res.url;
+    window.location.href = redirectUrl;
+  })()
 
 </script>
 
