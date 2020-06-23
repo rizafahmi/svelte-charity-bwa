@@ -1,7 +1,6 @@
-import Midtrans from 'midtrans-client';
-import querystring from 'querystring';
-
 exports.handler = function(event, context, callback) {
+  import Midtrans from 'midtrans-client';
+  import querystring from 'querystring';
   const headers = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Content-Type',
