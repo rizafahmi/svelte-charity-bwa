@@ -1,5 +1,7 @@
+import Midtrans from 'midtrans-client';
+import querystring from 'querystring';
+
 exports.handler = function(event, context, callback) {
-  const Midtrans = require('midtrans-client');
   const headers = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Content-Type',
@@ -32,12 +34,14 @@ exports.handler = function(event, context, callback) {
 
       const redirectUrl = transaction.redirect_url;
       console.log(`URL: ${redirectUrl}`);
+
+      const params = querystring.parse(event.body);
       callback(null, {
         statusCode: 200,
         headers,
         body: JSON.stringify({
           url: redirectUrl,
-          params: event.queryStringParameters
+          params
         })
       });
     })
